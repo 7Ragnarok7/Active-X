@@ -1,0 +1,30 @@
+<html>
+<body>
+<h3>ActiveX Demo: Listing Directories</h3>
+<div id="output"></div>
+
+<script type="text/javascript">
+try {
+    // Create FileSystemObject
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+
+    // Get folder (example: C:\Windows)
+    var folder = fso.GetFolder("C:\\Windows");
+
+    // Enumerate files
+    var files = new Enumerator(folder.Files);
+    var output = "<b>Files in C:\\Windows:</b><br>";
+
+    for (; !files.atEnd(); files.moveNext()) {
+        output += files.item().Name + "<br>";
+    }
+
+    document.getElementById("output").innerHTML = output;
+
+} catch(e) {
+    document.getElementById("output").innerHTML = 
+        "ActiveX blocked or not supported: " + e.message;
+}
+</script>
+</body>
+</html>
